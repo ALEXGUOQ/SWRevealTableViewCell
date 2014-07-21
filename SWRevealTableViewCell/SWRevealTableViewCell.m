@@ -474,6 +474,8 @@ static UIImage* _imageWithColor_size(UIColor* color, CGSize size)
         [button setTitle:title forState:UIControlStateNormal];
         [button setImage:image forState:UIControlStateNormal];
         
+        item.button = button;
+        
         [utilityView addSubview:button];
         [*views addObject:utilityView];
         
